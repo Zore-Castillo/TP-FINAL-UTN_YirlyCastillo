@@ -1,0 +1,359 @@
+body{
+    font-family: 'M PLUS 1p', sans-serif;
+}
+header {
+    background-color: black;
+    padding: 10px;
+}
+
+.caja { 
+    width: 940px;
+    position: relative; 
+    margin: 0 auto; 
+
+}
+
+nav {
+    position: absolute;
+    top: 125px;
+    right: 0;
+}
+nav li {
+    display: inline; 
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+nav a:hover{
+    color: #FFC600;
+    text-decoration: underline;
+}
+nav a:active {
+    color: #cccccc;
+}
+
+/* CSS HOME */
+
+.titulo-principal {
+    padding: 15px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 1em;
+    clear: left;
+    text-shadow: 10px 10px 20px black;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.utensilios{
+    width: 160px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+
+.principal p{
+    text-align: justify;
+    font-size: 1em;
+    margin: 0 0 1em;
+
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p{
+    text-align: center;
+    margin: 0 0 2em;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.listado-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items:before{
+    content: "✂";
+}
+
+
+.items:nth-child(2n){
+    font-style: italic;
+    color: #FFC600;
+   
+}
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 25px 10px #000000, -10px -10px rgb(94, 93, 93);
+}
+
+.imagen-diferenciales:hover{
+    opacity: 30%;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+/*PRODUCTOS*/
+
+.listado-productos {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+
+/* cajas de productos */
+.listado-productos li {
+    display: inline-block;  
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px; 
+    box-sizing: border-box; 
+    border: 3px dashed black; 
+    border-radius: 10px;
+
+}
+
+.container-productos{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+    
+}
+
+.listado-productos li:hover{
+    border-color: #FFC600;
+}
+
+.listado-productos li:active {
+    border-color: grey;
+}
+.listado-productos h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.listado-productos li:hover h2 {
+    font-size: 30px;
+}
+
+.producto-descripcion {
+    font-size: 18px;
+}
+
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;  
+}
+
+.agendar-turno{
+    width: 60%;
+    padding: 10px;
+    background-color: #FFC600;
+    font-size: 16px;
+    margin-top: 15px;
+    color:black;
+    transition: 1s; background: #FFC600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;   
+
+}
+
+.agendar-turno:hover{
+    background-color:  rgba(209, 176, 28, 0.897);
+    transform: scale(1.1);
+
+}
+
+footer{
+    text-align: center;
+    background-image: url(imagenes/background-footer.png);
+    padding: 20px;
+}
+
+.copyrigth{
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/*CONTACTO*/
+
+.formulario label, .forma-de-contacto legend{
+    display: block;
+    font-size: 18px;
+    margin: 0 0 10px 15px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px 15px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.forma-de-contacto .seleccion-contacto{
+    display: inline;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: black
+}
+
+.forma-de-contacto .check-list{
+    display: block;
+    color: black;
+    padding: 0 0 10px 15px;
+}
+
+.forma-de-contacto .check-list:hover{
+    color: #FFC600;
+    font-weight: 550;
+    font-size: 17px;
+    transition: 1.1;
+}
+
+.formulario{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.seleccion-horario{
+    width: auto;
+    padding: 10px;
+    margin: 0px 0 15px 20px;
+    border: 3px solid #FFC600; 
+    border-radius: 5%;
+    font-size: 16px;
+    background: none;
+    color: #FFC600
+}
+
+.checkbox{
+    width: auto;
+    margin: 10px 0 20px 15px; 
+    
+}
+
+
+.enviar {
+    display: block;
+    width: 30%;
+    padding: 20px 0;
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: bold;
+    color:black;
+    transition: 1s; background: #FFC600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color:rgba(209, 176, 28, 0.897);
+    transform: scale(1.1);
+
+}
+
+.forma-de-contacto, .boton-enviar{
+    padding: 3em 0;
+    background: #888888; 
+}
+
+
+@media screen and (max-width:480px){
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+        text-align: center;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .listado-diferenciales, .imagen-diferenciales{
+        width: 100%;
+        margin: 0 20px 20px 0px;
+    }
+
+    .listado-productos ul{
+        width: 100%;
+    }
+
+    .listado-productos li{
+        width: 100%;
+        display: block;
+        margin: 25px 0px;
+    }
+ 
+    .formulario .forma-de-contacto {
+        display: block;
+        width: auto;
+        margin: 10px 20px 10px 20px;
+         
+    }
+
+    .enviar{
+        width: 50%;
+        text-align: center;
+        padding: 2%;
+    }
+
+}

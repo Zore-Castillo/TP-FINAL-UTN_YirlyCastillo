@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto - Barberia Majestic</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja"> 
+                <h1><img src="imagenes/logo majestic.png" alt="Logo de Barberia Majestic"></h1>
+                
+                <!-- BARRA DE NAVEGACION -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+    
+                </nav>
+    
+            </div>
+ 
+        </header>
+
+        <main class="main-contacto">
+            <!-- FORMULARIO DE CONTACTO -->
+           <form>
+
+                <div class="formulario">
+                    <label for="nombreapellido">Nombre y Apellido</label> 
+                    <input type="text" id="nombreapellido" class="input-padron"placeholder="Nombre Apellido" required >
+    
+                    <label for="correoelectronico">Correo Electrónico</label>
+                    <input type="email" id="correoelectronico" class="input-padron" placeholder="email@dominio.com"required>
+    
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" class="input-padron" placeholder="(011) XXXX XXXX" required>
+    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="input-padron"  id="mensaje" cols="70" rows="10"></textarea>
+                </div>
+
+                <div class="forma-de-contacto">
+                    <fieldset>
+                        <legend class="seleccion-contacto">¿Como le gustaria que nos contactemos?</legend>
+                        <label for="radio-email" class="check-list"> <input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                        <label for="radio-telefono" class="check-list"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>                  
+                        <label for="radio-whatsapp" class="check-list"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label> 
+    
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend class="seleccion-contacto">¿En cual horario prefieres que te contactemos?</legend>
+    
+                        <select class="seleccion-horario">
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                        </select>
+    
+                    </fieldset>
+
+                    <label><input type="checkbox" class="checkbox" checked>Le gustaria recibir informacion sobre Barberia Majestic?</label>
+
+                    <button type="button" class="enviar" id= "enviar" onclick="enviarDatos()">Enviar formulario</button>
+        
+                </div>
+               
+            </form>
+
+        </main>
+
+        <footer>
+            <img src="imagenes/Logo blanco.png" alt="Logo de Barberia Majestic">
+            <p class="copyrigth">&copy Copyrigth Barberia Majestic - 2022 "TP-FINAL YIRLY CASTILLO"</p>
+        </footer>
+
+        <script src="contacto.js"></script>
+    </body>
+</html>
